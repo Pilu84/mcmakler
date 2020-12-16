@@ -1,0 +1,6 @@
+{
+    "tslint.ignoreDefinitionFiles": true,
+    "tslint.jsEnable": true,
+    "tslint.configFile": "./tslint.json",
+    "tslint.exclude": null
+}

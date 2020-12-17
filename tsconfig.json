@@ -20,7 +20,7 @@
   },
   "include": [
    "./typings/**/*",
-   "./**/*", "main", "helpers", "content", "index.tsx"
+   "./**/*", "src/main", "helpers", "content", "index.tsx"
   ],
   "awesomeTypescriptLoaderOptions": {
 	  "useCache": true,

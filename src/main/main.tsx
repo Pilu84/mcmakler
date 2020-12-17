@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { MainContent } from '../content/mainContent/mainContent';
+import { GetHeader } from '../content/header/header';
+import { Layout } from 'antd';
 
 interface MainState extends React.ClassAttributes<any> {
     dummy?: any;
@@ -16,9 +19,11 @@ export class Main extends React.Component<{}, MainState> {
     render() {
         
         return (
-            <div>
-                <h1>Hello World!</h1>
-            </div>
+            <Layout>
+                <GetHeader />
+
+                <MainContent />
+            </Layout>
         );
     }
 

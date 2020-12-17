@@ -10,10 +10,12 @@
   "author": "OliverBunda <bundaoliver@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@ant-design/icons": "^4.3.0",
     "@babel/core": "^7.9.6",
     "@types/classnames": "^2.2.11",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",
+    "antd": "^4.9.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",

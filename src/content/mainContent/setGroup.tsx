@@ -9,6 +9,8 @@ const { Title } = Typography;
 interface SetGroupProps extends React.ClassAttributes<any> {
     titel: string;
     type: number;
+    data: Array<any>;
+    user: Array<any>;
 }
 
 interface SetGroupState extends React.ClassAttributes<any> {
@@ -21,25 +23,36 @@ export class SetGroup extends React.Component<SetGroupProps, SetGroupState> {
         super(props);
 
         this.state = {
-            appointment: 0
+            appointment: this.props.data.length
         };
-
 
     }
 
+
     render() {
 
-        const { titel, type } = this.props;
+        const { titel, type, data, user } = this.props;
 
         return (
             <>
-            <Row>
-                <Title level={2}>{titel} ( {this.state.appointment} )</Title>
-            </Row>
+                <Row>
+                    <Title level={2}>{titel} ( {this.state.appointment} )</Title>
+                </Row>
 
-            <Row>
-                <GetCard type={type}/>
-            </Row>
+                <Row>
+                    {data.map((element: any) => {
+                        const selectedUser = user.filter((u: any) => u.id === element.userid)[0];
+                        return (
+                            <Row gutter={16}>
+                                <GetCard
+                                    type={type}
+                                    data={selectedUser}
+                                />
+                            </Row>
+                        );
+                    })
+                    }
+                </Row>
             </>
         );
     }

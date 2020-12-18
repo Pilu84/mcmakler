@@ -2,10 +2,15 @@ import * as React from 'react';
 import { Input, Menu, Dropdown, Button, Row, Col, } from 'antd';
 import '../../App.css';
 import { SearchOutlined, DownOutlined } from '@ant-design/icons';
+import { useHistory } from 'react-router-dom';
 
 const { Search } = Input;
 
-export class SearchForm extends React.Component<{}, {}> {
+export interface SearchFormProps extends React.ClassAttributes<any> {
+    onSeach(value: string): void;
+}
+
+export class SearchForm extends React.Component<SearchFormProps, {}> {
     constructor(props: any) {
         super(props);
 
@@ -13,7 +18,7 @@ export class SearchForm extends React.Component<{}, {}> {
     }
 
     onChange(e: any) {
-        console.log(e);
+        this.props.onSeach(e.target.value);
     }
 
     handleMenuClick() {

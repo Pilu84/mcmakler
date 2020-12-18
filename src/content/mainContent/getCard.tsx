@@ -8,6 +8,7 @@ const gridStyle = {
 
 interface GetCardProps extends React.ClassAttributes<any> {
     type: number;
+    data: any;
 }
 
 interface GetCardState extends React.ClassAttributes<any> {
@@ -32,20 +33,21 @@ export class GetCard extends React.Component<GetCardProps, GetCardState> {
 
     render() {
 
+        const { data } = this.props;
+        const avatarName = data.name[0].toUpperCase() + data.lastname[0].toUpperCase();
 
         return (
-            <>
+            <Col span={8}>
                 <Card style={{ width: 300 }}>
                     <Card.Grid style={{ ...gridStyle, textAlign: 'center' }}>
-                        <Avatar size={74} style={{ color: '#fff', backgroundColor: this.state.color }}>U</Avatar>
-                        <p>Name</p>
-                        <p>phone</p>
-                        <p>email</p>
-                        <p>phone</p>
+                        <Avatar size={74} style={{ color: '#fff', backgroundColor: this.state.color }}>{avatarName}</Avatar>
+                        <p>{data.name} {data.lastname}</p>
+                        <p>{data.phone}</p>
+                        <p>{data.email}</p>
                         <p>info</p>
                     </Card.Grid>
                 </Card>
-            </>
+            </Col>
         );
     }
 
@@ -55,7 +57,7 @@ export class GetCard extends React.Component<GetCardProps, GetCardState> {
         for (let i = 0; i < 6; i++) {
             color += letters[Math.floor(Math.random() * 16)];
         }
-        this.setState({color});
+        this.setState({ color });
     }
 
 }

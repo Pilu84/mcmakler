@@ -1,0 +1,126 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "name": "Muster",
+            "lastname": "Muster",
+            "phone": "+49 123456",
+            "email": "muster@muster.de"
+        },
+        {
+            "id": 2,
+            "name": "Friedrich",
+            "lastname": "Muster",
+            "phone": "+49 123456",
+            "email": "f.m@muster1.de"
+        },
+        {
+            "id": 3,
+            "name": "Max",
+            "lastname": "Muster",
+            "phone": "+49 123456",
+            "email": "z.mustermax@muster2.de"
+        },
+        {
+            "id": 4,
+            "name": "Bernhard",
+            "lastname": "Weiß",
+            "phone": "+49 123456",
+            "email": "weiss.bern@muster3.de"
+        },
+        {
+            "id": 5,
+            "name": "Karl",
+            "lastname": "Karl",
+            "phone": "+49 123456",
+            "email": "kk@muster4.de"
+        },
+        {
+            "id": 6,
+            "name": "Saskia",
+            "lastname": "Nova",
+            "phone": "+49 123456",
+            "email": "nova.s@muster5.de"
+        },
+        {
+            "id": 7,
+            "name": "George",
+            "lastname": "Io",
+            "phone": "+49 123456",
+            "email": "i.g@muster6.de"
+        },
+        {
+            "id": 8,
+            "name": "Example",
+            "lastname": "Zetor",
+            "phone": "+49 123456",
+            "email": "examplezetor@muster7.de"
+        },
+        {
+            "id": 9,
+            "name": "Zoe",
+            "lastname": "Here",
+            "phone": "+49 123456",
+            "email": "z.here@muster8.de"
+        },
+        {
+            "id": 10,
+            "name": "Santa",
+            "lastname": "Nikolaus",
+            "phone": "+49 123456",
+            "email": "santa.nikolaus@muster.de"
+        }
+    ],
+    "Appointment_Set": [
+        {
+            "id": 1,
+            "userid": 2,
+            "appertmentid": 1
+        },
+        {
+            "id": 2,
+            "userid": 3,
+            "appertmentid": 1
+        },
+        {
+            "id": 3,
+            "userid": 6,
+            "appertmentid": 1
+        },
+        {
+            "id": 4,
+            "userid": 10,
+            "appertmentid": 1
+        }
+    ],
+    "Property_Viewed": [
+        {
+            "id": 1,
+            "userid": 4,
+            "bid": 122133
+        },
+        {
+            "id": 2,
+            "userid": 5,
+            "bid": 1221343
+        },
+        {
+            "id": 3,
+            "userid": 9,
+            "bid": 122133
+        }
+    ],
+
+    "Interested": [
+        {
+            "id": 1,
+            "userid": 1
+        }
+    ],
+    "Offer_Accepted": [
+        {
+            "id": 1,
+            "userid": 9
+        }
+    ]
+}
